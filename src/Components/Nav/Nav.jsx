@@ -7,18 +7,22 @@ export default function Nav() {
     <header className="padding-x py-8 absolute z-10 w-full">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
-          <img src={headerLogo} alt="Logo" width={130} height={29}  />
+          <img src={headerLogo} alt="Logo" width={130} height={29} />
         </a>
         <ul className="flex-1 flex justify-center gap-16 items-center max-lg:hidden">
-          {
-            navLinks.map((item) => (
-              <li key={item.label} >
-                <a href={item.label} className="text-lg font-semibold text-white hover:text-primary transition-all"></a>
-                {item.label}
-              </li>
-          }
+          {navLinks.map((item) => (
+            <li key={item.label}>
+              <a
+                href={item.label}
+                className="text-lg font-semibold text-white hover:text-primary transition-all"
+              ></a>
+              {item.label}
+            </li>
+          ))}
         </ul>
-        {/* Use the hamburger icon here if needed */}
+        <div className="hidden max-lg:block">
+          <img src={hamburger} alt="hamburger-menu" width={25} height={25} />
+        </div>
       </nav>
     </header>
   );
