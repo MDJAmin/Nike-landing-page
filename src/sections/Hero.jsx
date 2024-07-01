@@ -3,17 +3,18 @@ import { shoes, statistics } from "../constants";
 import { Button, ShoeCard } from "../components";
 import { bigShoe1 } from "../assets/images";
 import { arrowRight } from "../assets/icons";
+import { BiRotateRight } from "react-icons/bi";
 
 export default function Hero() {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
   return (
-    <section
+    <section 
       id="home"
-      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
+      className=" w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
     >
-      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28">
-        <p className="text-xl font-montserrat text-coral-red">
+      <div className="mt-6 relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28">
+        <p className="text-xl font-montserrat text-blue-500">
           Our Summer collections
         </p>
 
@@ -22,7 +23,7 @@ export default function Hero() {
             The New Arrival
           </span>
           <br />
-          <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
+          <span className="text-blue-500 inline-block mt-3">Nike</span> Shoes
         </h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
           Discover stylish Nike arrivals, quality comfort, and innovation for

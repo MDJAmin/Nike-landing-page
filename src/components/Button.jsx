@@ -8,11 +8,11 @@ const Button = ({
 }) => {
   return (
     <button
-      className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none
+      className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none hover:scale-x-105 transition-all
       ${
         backgroundColor
           ? `${backgroundColor} ${textColor} ${borderColor}`
-          : "bg-coral-red text-white border-coral-red"
+          : "bg-blue-500 text-white"
       } rounded-full ${fullWidth && "w-full"}`}
     >
       {label}
@@ -21,7 +21,7 @@ const Button = ({
         <img
           src={iconURL}
           alt='arrow right icon'
-          className='ml-2 rounded-full bg-white w-5 h-5'
+          className='transition-all ml-1 text-blue-500 w-5 h-5 hover:scale-125'
         />
       )}
     </button>
