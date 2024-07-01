@@ -8,7 +8,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none hover:scale-x-105 transition-all shadow-md
+      className={`flex justify-center items-center gap-2 px-7 py-4 border font-Poppins text-lg leading-none hover:scale-x-105 transition-all shadow-md
       ${
         backgroundColor
           ? `${backgroundColor} ${textColor} ${borderColor}`

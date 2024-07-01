@@ -16,7 +16,7 @@ export default function SpecialOffer() {
         />
       </div>
       <div className='flex flex-1 flex-col'>
-        <h2 className='text-4xl font-palanquin font-bold'>
+        <h2 className='text-4xl font-Poppins font-bold'>
           <span className='text-blue-500'>Special </span>
           Offer
         </h2>

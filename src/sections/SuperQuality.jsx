@@ -11,8 +11,8 @@ export default function SuperQuality() {
       className='flex justify-between items-center max-lg:flex-col gap-10 w-full max-container'
     >
       <div className='flex flex-1 flex-col'>
-        <h2 className='font-palanquin capitalize text-4xl lg:max-w-lg font-bold'>
-          We Provide You
+        <h2 className='font-Poppins capitalize text-4xl lg:max-w-lg font-bold'>
+          We Provide You <br />
           <span className='text-blue-500'> Super </span>
           <span className='text-blue-500'>Quality </span> Shoes
         </h2>

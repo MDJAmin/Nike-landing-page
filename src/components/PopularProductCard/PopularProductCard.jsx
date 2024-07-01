@@ -32,10 +32,10 @@ export default function PopularProductCard({
         />
         <p className=" text-xl leading-normal text-gray-800">{starNumber}</p>
       </div>
-      <h3 className="mt-2 text-2xl leading-normal font-semibold font-palanquin">
+      <h3 className=" mt-2 text-2xl leading-normal font-semibold font-Poppins">
         {name}
       </h3>
-      <p className="mt-2 font-semibold font-montserrat text-blue-500 text-2xl leading-normal">
+      <p className=" mt-2 font-semibold font-Poppins text-blue-500 text-2xl leading-normal">
         {price}
       </p>
     </div>
