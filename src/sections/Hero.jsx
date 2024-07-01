@@ -3,7 +3,7 @@ import { shoes, statistics } from "../constants";
 import { Button, ShoeCard } from "../components";
 import { bigShoe1 } from "../assets/images";
 import { arrowRight } from "../assets/icons";
-import { BiRotateRight } from "react-icons/bi";
+
 
 export default function Hero() {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
