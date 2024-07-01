@@ -16,7 +16,7 @@ export default function PopularProductCard({
   return (
     <div className="flex flex-1 flex-col w-full max-sm:w-full">
       <Atropos className="my-atropos transition-all" shadow={false}>
-        <img src={imgURL} alt={name} className="w-[282px] h-[282px]" />
+        <img src={imgURL} alt={name} className="w-[282px] h-[282px] rounded-full border-4 border-blue-100 cursor-pointer" />
       </Atropos>
       <div className="mt-8 flex justify-start gap-2.5">
         <img
