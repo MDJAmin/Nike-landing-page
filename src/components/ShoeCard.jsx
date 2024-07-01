@@ -8,7 +8,7 @@ export default function ShoeCard({ imgURL, changeBigShoeImage, bigShoeImg }) {
   };
   return (
     <div
-      className={`border-2 rounded-xl ${
+      className={`transition-all border-2 rounded-xl ${
         bigShoeImg === imgURL.bigShoe
           ? "border-coral-red scale-110"
           : "border-transparent"
