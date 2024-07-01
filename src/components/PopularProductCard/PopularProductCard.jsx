@@ -16,7 +16,11 @@ export default function PopularProductCard({
   return (
     <div className="flex flex-1 flex-col w-full max-sm:w-full">
       <Atropos className="my-atropos transition-all" shadow={false}>
-        <img src={imgURL} alt={name} className="w-[282px] h-[282px] rounded-full border-4 border-blue-100 cursor-pointer" />
+        <img
+          src={imgURL}
+          alt={name}
+          className="w-[282px] h-[282px] rounded-full border-4 border-blue-100 cursor-pointer mb-5 shadow-lg"
+        />
       </Atropos>
       <div className="mt-8 flex justify-start gap-2.5">
         <img
@@ -26,9 +30,7 @@ export default function PopularProductCard({
           height={0.1}
           className="relative mt-[2.7px]"
         />
-        <p className=" text-xl leading-normal text-gray-800">
-          {starNumber}
-        </p>
+        <p className=" text-xl leading-normal text-gray-800">{starNumber}</p>
       </div>
       <h3 className="mt-2 text-2xl leading-normal font-semibold font-palanquin">
         {name}
