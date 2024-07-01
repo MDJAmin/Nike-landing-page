@@ -6,23 +6,22 @@ export default function ShoeCard({ imgURL, changeBigShoeImage, bigShoeImg }) {
       changeBigShoeImage(imgURL.bigShoe);
     }
   };
-  // ? "border-coral-red scale" add it later !
   return (
     <div
-      className={`border-4 rounded-xl ${
+      className={`border-2 rounded-xl ${
         bigShoeImg === imgURL.bigShoe
-          ? "border-coral-red"
+          ? "border-coral-red scale-110"
           : "border-transparent"
       } cursor-pointer max-sm:flex-1`}
       onClick={handleClick}
     >
-      <div className="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
+      <div className="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4 shadow-xl">
         <img
-          src={imgURL.thumbnail}
+          src={imgURL.bigShoe}
           alt="shoe colletion"
           width={127}
           height={103.34}
-          className="object-contain"
+          className="object-contain -rotate-12"
         />
       </div>
     </div>
