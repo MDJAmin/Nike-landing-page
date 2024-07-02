@@ -15,7 +15,7 @@ export default function PopularProductCard({
   });
   return (
     <div className="flex flex-1 flex-col w-full max-sm:w-full">
-      <Atropos className="my-atropos transition-all rounded-full" shadowScale={0.5}>
+      <Atropos className="my-atropos transition-all rounded-full" shadow={false}>
         <div className="rounded-full min-w-36">
           <img
             src={imgURL}

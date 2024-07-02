@@ -3,7 +3,7 @@ import Atropos from "atropos/react";
 export default function ReviewCard({ imgURL, customerName, rating, feedback }) {
   return (
     <div className="flex justify-center items-center flex-col">
-      <Atropos className="my-atropos w-32 transition-all" shadowScale={0.5}>
+      <Atropos className="my-atropos w-32 transition-all" shadow={false}>
         <div>
         <img
           src={imgURL}
