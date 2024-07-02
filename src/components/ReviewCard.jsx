@@ -3,12 +3,14 @@ import Atropos from "atropos/react";
 export default function ReviewCard({ imgURL, customerName, rating, feedback }) {
   return (
     <div className="flex justify-center items-center flex-col">
-      <Atropos className="my-atropos w-32 transition-all" shadow={false}>
+      <Atropos className="my-atropos w-32 transition-all" shadowScale={0.5}>
+        <div>
         <img
           src={imgURL}
           alt="customer"
           className="rounded-full object-cover w-[120px] h-[120px]"
         />
+        </div>
       </Atropos>
       <p className="mt-6 max-w-sm text-center info-text">{feedback}</p>
       <div className="mt-3 flex justify-center items-center me-7">
