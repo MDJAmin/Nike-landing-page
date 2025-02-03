@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="max-container">
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
         <div className="flex flex-col items-start">
-          <a href="/">
+          <a href="#">
             <img
               src={footerLogo}
               alt="logo"
@@ -44,7 +44,7 @@ export default function Footer() {
                     className="mt-3 font-montserrat text-base leading-normal text-white-400  transition-all hover:text-blue-600"
                     key={link.name}
                   >
-                    <a href={link.link}>{link.name}</a>
+                    <a href="#">{link.name}</a>
                   </li>
                 ))}
               </ul>
